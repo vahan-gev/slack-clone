@@ -1,0 +1,84 @@
+.header {
+  background-color: #900c3e;
+  padding: 10px 15px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  position: fixed;
+  width: calc(100% - 30px);
+}
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header-search {
+  text-indent: 2vh;
+  font-size: 18px;
+  height: 40px;
+  width: 450px;
+  border: 2px solid #c70039;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+.header-search:focus {
+  outline: none;
+}
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-profile-picture {
+  border-radius: 50%;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid #c70039;
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.header-profile-picture:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.search-button {
+  display: none;
+}
+@media only screen and (max-width: 840px) {
+  .header-search {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .header-search {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .header-search {
+    display: none;
+  }
+  .search-button {
+    display: block;
+  }
+}
+.message-button {
+  display: none;
+}
+@media (max-width: 765px) {
+  .message-button {
+    display: block;
+  }
+}
+
+.header-logo {
+  margin: 0;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+}

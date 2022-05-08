@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+body {
+  --slack-color: #900c3e;
+  overflow: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.message-found {
+  background-color: #ececec;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid #c70039;
+  transition: 0.2s;
+}
+::selection {
+  color: white;
+  background-color: #c70039;
+}
+
+::moz-selection {
+  color: white;
+  background-color: #c70039;
+}
